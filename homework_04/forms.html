@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms</title>
+</head>
+<body>
+
+	<!-- Log In Form -->
+
+	<form action="index.html" method="post">
+	<fieldset>
+		<legend>Log In Form</legend>
+
+		<!-- Table in Form -->
+
+		<table border="0">
+		<tbody>
+			<tr>
+				<td><label for="email">Email or Phone</label></td>
+				<td><label for="pass">Password</label></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><input type="email" name="email" id="email" required></td>
+				<td><input type="password" name="password" id="pass" required></td>
+				<td><input type="submit" value="Log In"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a href="https://www.facebook.com/login/identify/?ctx=recover&ars=royal_blue_bar" target="_blank">Forgot account?</a></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+	</fieldset>
+	</form>
+	<br>
+
+	<!-- Sign Up Form -->
+
+	<form action="" method="post">
+		<fieldset>
+			<legend>Sign Up Form</legend>
+			<h1>Create a New Account</h1>
+			<p>It's quick and easy.</p>
+
+			<!-- Table in Form -->
+			
+			<table border="0">
+				<tbody>
+					<tr>
+						<td><label for="first-name">Enter Your First Name:</label></td>
+						<td><label for="last-name">Enter Your Last Name:</label></td>
+					</tr>
+						<tr>
+						<td><input type="text" name="name" id="first-name" placeholder="First name" required></td>
+						<td><input type="text" name="lastName" id="last-name" placeholder="Last name" required></td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<label for="your-email">Enter Your Email:</label><br>
+			<input type="email" name="email" id="your-email" placeholder="Mobile number or email">
+			<br><br>
+			<label for="password">Enter Your Password:</label>
+			<br>
+			<input type="password" name="password" id="password" placeholder="New password">
+			<br><br>
+			<label for="birthday">Birthday:</label>
+			<br>
+			<input type="date" name="birthday" id="birthday">
+			<br>
+			<p>Gender</p>
+			<input type="radio" name="gender" value="female" id="female">
+			<label for="female">Female</label>
+			<input type="radio" name="gender" value="male" id="male">
+			<label for="male">Male</label>
+			<input type="radio" name="gender" value="custom" id="custom">
+			<label for="custom">Custom</label>
+			<br>
+			<p>By clicking Sign Up, you agree to our <a href="https://www.facebook.com/legal/terms/update" target="_blank">Terms</a>, <a href="https://www.facebook.com/about/privacy/update" target="_blank">Data Policy</a> and <a href="https://www.facebook.com/policies/cookies/" target="_blank">Cookies Policy.</a>  You may receive SMS Notifications from us and can opt out any time.</p>
+			<input type="submit" value="Sign Up">
+			<hr>
+			<p><a href="https://www.facebook.com/pages/creation/?ref_type=registration_form" target="_blank">Create a Page</a> for a celebrity, band or business.</p>
+		</fieldset>
+	</form>
+</body>
+</html>

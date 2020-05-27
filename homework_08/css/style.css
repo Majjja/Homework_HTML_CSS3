@@ -1,0 +1,234 @@
+*{
+	box-sizing: border-box;
+}
+@keyframes input {
+	0%{
+		width: 0px;
+		background-color: white;
+	}
+	50%{
+		width: 130px;
+		background-color: white;
+	}
+	100%{
+		width: 130px;
+		background-color: rgba(255, 255, 255, 0.01);
+	}
+}
+@keyframes balls{
+	0%{
+		transform: rotateZ(0deg);
+	}
+	100%{
+		transform: rotateZ(180deg);
+	}
+}
+@keyframes ball{
+	0%{
+		top: 0px;
+		left: 0px;
+	}
+	25%{
+		top: 0px;
+		left: 45px;
+	}
+	50%{
+		top:45px;
+		left: 45px;
+	}
+	75%{
+		top: 45px;
+		left: 0px;
+	}
+	100%{
+		top: 0px;
+		left: 0px;
+	}
+}
+.main_header{
+	text-align: center;
+	color: #9c1111;
+	
+	/* transitions */
+	-webkit-transition: all 2s ease-in-out 500ms;
+	-moz-transition: all 2s ease-in-out 500ms;
+	-ms-transition: all 2s ease-in-out 500ms;
+	transition: all 2s ease-in-out 500ms;
+}
+.main_header:hover{
+	background-color: #faebed;
+	color: #a61124;
+	transform: scale(2.2);
+	text-decoration: underline;
+	cursor: pointer;
+}
+.main_box{
+	height: 300px;
+	width: 60%;
+	border: 5px solid black;
+	margin: 100px auto;
+	background-color: rgb(209, 56, 46);
+}
+.upper_box{
+	height: 50%;
+	width: 100%;
+	float: left;
+}
+.box_left{
+	float: left;
+	height: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.box_left1{
+	width: 130px;
+	height: 30px;
+}
+.container{
+	width: 130px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+
+	 /*animations*/ 
+	-webkit-animation: input 5s ease-in-out infinite;
+	-moz-animation: input 5s ease-in-out infinite;
+	-o-animation: input 5s ease-in-out infinite;
+	-ms-animation: input 5s ease-in-out infinite;
+	animation: input 5s ease-in-out infinite;
+}
+#input{
+	width:130px;
+	height: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	background-color: #de3333;
+	border-width: 0px;
+}
+.box_right{
+	float: left;
+	height: 100%;
+	width: 50%;
+	background-color: #de3333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box_right1{
+	width: 130px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.container_2{
+	width: 130px;
+	height: 20px;
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	 /*animations */
+	-webkit-animation: input 5s ease-in-out infinite;
+	-moz-animation: input 5s ease-in-out infinite;
+	-o-animation: input 5s ease-in-out infinite;
+	-ms-animation: input 5s ease-in-out infinite;
+	animation: input 5s ease-in-out infinite;
+}
+#input_2{
+	width:130px;
+	height: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	background-color: #db8484;
+	border-width: 0px;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.lower_box{
+	height: 50%;
+	width: 100%;
+	float: left;
+}
+.box_left2{
+	float: left;
+	height: 100%;
+	width: 50%;
+	background-color: #de3333;
+}
+.box_left2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box_01{
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-between;
+
+	/* animations */
+	-webkit-animation: balls 700ms ease-in-out 1s infinite;
+	-moz-animation: balls 700ms ease-in-out 1s infinite;
+	-o-animation: balls 700ms ease-in-out 1s infinite;
+	-ms-animation: balls 700ms ease-in-out 1s infinite;
+ 	animation: balls 700ms ease-in-out 1s infinite;
+}
+.ball_01{
+	background-color: #db8484;
+}
+.ball_02{
+	background-color: white;
+}
+.ball_03{
+	background-color: #db8484;
+}
+.balls{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+.box_right2{
+	float: left;
+	height: 100%;
+	width: 50%;
+}
+.box_right2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container_02{
+	width: 55px;
+	height: 55px;
+}
+.square{
+	width: 35px;
+	height: 35px;
+	background-color: #db8484;
+	margin: auto;
+}
+.ball{
+	background-color: white;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	position: relative;
+
+	/* animations */
+	-webkit-animation: ball 2s ease infinite;
+	-moz-animation: ball 2s ease infinite;
+	-o-animation: ball 2s ease infinite;
+	-ms-animation: ball 2s ease infinite;
+	animation: ball 2s ease infinite;
+}

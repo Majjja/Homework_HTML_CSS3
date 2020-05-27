@@ -1,0 +1,163 @@
+/* Downloaded Fonts */
+@font-face{
+	src: url:('../fonts/Gilberto.ttf');
+	font-family: "Gilberto";
+}
+
+@font-face{
+	src: url('../fonts/Madame.ttf');
+	font-family: "Madame";
+}
+
+*{
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	background-color: rgb(222, 242, 250);
+}
+
+#mainHeading{
+	font-family: 'Monoton', cursive;
+	font-size: 3.5em;
+	background-color: rgba(86, 175, 227, 0.3);
+	text-align: center;
+	color: rgb(147, 135, 173);
+	text-shadow: 5px -5px rgba(205, 195, 227, 1);
+	word-spacing: 10px;
+}
+
+.mainHeading_02{
+	font-family: 'Monoton', cursive;
+	font-size: 3.5em;
+	text-align: center;
+	text-transform: uppercase;
+	word-spacing: 10px;
+	color:#0c9987;
+	text-shadow: 10px -10px 5px rgba(12, 153, 135, 0.5);
+	background-color: rgba(84, 179, 166, 0.3);
+}
+
+
+section h3{
+	font-family: 'Alfa Slab One', cursive;
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-indent: 20px;
+	color: rgba(52, 25, 110, 0.8);
+	text-shadow: -3px -5px #c6c2cf;
+	letter-spacing: 10px;
+	background-color: rgba(86, 175, 227, 0.3);
+}
+
+
+section h4{
+	font-family: "Gilberto";
+	font-size: 1.5em;
+	text-transform: uppercase;
+	text-decoration: underline;
+	background-color: rgba(172, 175, 176, 0.5);
+	color: #117d6f;
+	text-indent: 20px;
+	text-shadow: 10px -10px 5px rgba(70, 108, 128, 0.5);
+}
+
+figure{
+	text-align: center;
+}
+
+figcaption{
+	text-decoration: underline;
+	text-align: center;
+	font-style: italic;
+	font-family: 'Yellowtail', cursive;
+	text-shadow: -10px -5px 5px rgba(158, 36, 105, 0.5);
+
+}
+
+li{
+	list-style: none;
+	text-indent: 25px;
+
+}
+
+nav a{
+	font-family: 'Odibee Sans', cursive;
+}
+
+a:link{
+	text-decoration: none;
+	color: #426975;
+}
+
+a:visited{
+	color: #63a6ba;
+}
+
+a:hover{
+	font-size:20px;
+	cursor: pointer;
+}
+
+a:active{
+	color:red;
+}
+
+a:focus{
+	background-color: blue;
+}
+
+article > p{
+	font-family: 'Enriqueta', serif;
+	text-align: justify;
+	text-indent: 20px;
+	line-height: 35px;
+	color: rgba(59, 30, 87, 0.5);
+
+}
+
+#copy{
+	text-align: center;
+	color: blue;
+}
+
+#vertical{
+	vertical-align: super;
+}
+
+#msg{
+	text-align: right;
+	text-transform: capitalize;
+	color: #426975;
+}
+
+#top{
+	text-transform:lowercase;
+	font-style: italic;
+}
+
+.paragraph:first-letter{
+	font-size: 2em;
+}
+
+.paragraph:first-line{
+	color: #295e7d;
+}
+
+.parag{
+	font-family: "Madame";
+	font-size: 20px;
+}
+
+.parag:first-letter{
+	font-size: 2em;
+	color:#0c9987;
+}
+
+.links:hover{
+	background-color: rgba(70, 108, 128, 0.5); 
+}
+
+#firstParagraph + p {
+	color:#b56499;
+	font-size: 20px;
+	font-family: "Gilberto";
+}

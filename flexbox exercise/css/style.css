@@ -1,0 +1,246 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	display: flex;
+}
+
+/* main container with 2 rows */
+
+.main_cont{
+	margin: 30px auto;
+	display: flex;
+	flex-wrap: nowrap;
+	width: 600px;
+	height: 600px;
+}
+
+/* row_01 with three divs(rows) */
+.row_01{
+	flex-basis: 95%;
+	display: flex;
+	/*flex-direction: row;
+	flex-wrap: wrap;*/
+	flex-flow: row wrap;
+}
+
+/* first-row with three items */
+.first-row{
+	height: 10%;
+	flex-basis: 100%;
+	display: flex;
+}
+.first-row .item:nth-child(1){
+	background-color: #ba8cb6; 
+	height: 100%;
+	width: 30%;
+}
+.first-row .item:nth-child(2){
+	background-color: #8dc49f;
+	height: 100%;
+	width: 40%;
+	border-width: 0px 0px 0px 10px;
+	border-style: solid;
+	border-color: black;
+}
+.first-row .item:nth-child(3){
+	background-color: lightblue;
+	height: 100%;
+	width: 30%;
+	border-width: 0px 10px;
+	border-style: solid;
+	border-color: black;
+}
+
+/* second-row with three items directed in column */
+.second-row{
+	height: 90%;
+	flex-basis: 10%;
+	display: flex;
+	flex-direction: column;
+}
+.second-row .item:nth-child(1){
+	background-color: lightblue; 
+	flex-basis: 30%;
+	border-width: 10px 0px 0px 0px;
+	border-style: solid;
+	border-color: black;
+}
+.second-row .item:nth-child(2){
+	background-color: #8dc49f;
+	flex-basis: 40%;
+	border-width: 10px 0px 0px 0px;
+	border-style: solid;
+	border-color: black;
+}
+.second-row .item:nth-child(3){
+	background-color: #ba8cb6;
+	flex-basis: 30%;
+	border-width: 10px 0px 0px 0px;
+	border-style: solid;
+	border-color: black;
+}
+
+/* third row with two containers */
+.third-row{
+	height: 90%;
+	flex-basis: 90%;
+}
+
+/* container_01 with items directed in column */
+.container_01{
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.container_01 .item:nth-child(1){
+	background-color: lightcoral; 
+	height: 100%;
+	width: 67%;
+	border-width: 10px 0px 0px 10px;
+	border-style: solid;
+	border-color: black;
+}
+.container_01 .item:nth-child(2){
+	background-color: #e64747;
+	height: 50%;
+	width: 33%;
+	border-width: 10px 10px 0px 10px;
+	border-style: solid;
+	border-color: black;
+}
+.container_01 .item:nth-child(3){
+	height: 50%;
+	width: 33%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+.item .item:nth-child(1){
+	background-color: #8cafba; 
+	height: 100%;
+	width: 55%;
+	border-width: 10px 10px 0px 10px;
+	border-style: solid;
+	border-color: black;
+}
+.item .item:nth-child(2){
+	background-color: #a9d7db;
+	height: 100%;
+	width: 45%;
+	border-width: 10px 10px 0px 0px;
+	border-style: solid;
+	border-color: black;
+}
+ 
+/* container_02 with three columns */
+/*first column*/
+.container_02{
+	height: 40%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.col_01{
+	height: 100%;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+
+}
+.col_01 .item:nth-child(1){
+	background-color: #a9d7db;
+	height: 63%;
+	width: 100%;
+	border-width: 10px 0px 0px 10px;
+	border-style: solid;
+	border-color: black;
+
+}
+.col_01 .item:nth-child(2){
+	background-color: #e67584;
+	height: 37%;
+	border-width: 10px 0px 0px 10px;
+	border-style: solid;
+	border-color: black;
+}
+
+/* second column */
+.col_02{
+	height: 90%;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.col_02 .item:nth-child(1){
+	background-color: #f5aeb7;
+	height: 40%;
+	width: 52.5%;
+	border-width: 10px 0px 0px 10px;
+	border-style: solid;
+	border-color: black;
+
+}
+.col_02 .item:nth-child(2){
+	background-color: #8dc49f;
+	height: 30%;
+	width: 52.5%;
+	border-width: 10px 0px 0px 10px;
+	border-style: solid;
+	border-color: black;
+}
+.col_02 .item:nth-child(3){
+	background-color: #ba8cb6;
+	height: 30%;
+	width: 52.5%;
+	border-width: 10px 0px 10px 10px;
+	border-style: solid;
+	border-color: black;
+}
+.col_02 .item:nth-child(4){
+	background-color: #e64747;
+	height: 40%;
+	width: 47.5%;
+	border-width: 10px 10px 0px 10px;
+	border-style: solid;
+	border-color: black;
+}
+.col_02 .item:nth-child(5){
+	background-color: #a9d7db;
+	height: 60%;
+	width: 47.5%;
+
+	border-width: 10px 10px 10px 10px;
+	border-style: solid;
+	border-color: black;
+}
+
+/* third column */
+.col_03{
+	background-color: #e64747;
+	height: 10%;
+	width: 70%;
+	border-width: 0px 10px;
+	border-style: solid;
+	border-color: black;
+}
+
+/* row_02 with two items */
+.row_02{
+	flex-basis: 5%;
+}
+.row_02 .item:nth-child(1){
+	background-color: lightcoral;
+	height: 77%;
+}
+.row_02 .item:nth-child(2){
+	background-color: coral;
+	height: 23%;
+	border-width: 10px 0px 0px 0px;
+	border-style: solid;
+	border-color: black;
+}
